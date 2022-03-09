@@ -1,0 +1,227 @@
+:root {
+    --sw-yellow: #FFE81F;
+    --sw-black: rgb(48, 47, 47);
+
+    --trooper-yellow: #e89e10; 	
+	--trooper-blue: #8ed8fc; 		
+	--trooper-red: #9f0613; 	
+	--trooper-green: #54ad7a; 	 	
+	--trooper-gray: #a8c2c2;		
+	--trooper-navy: #2e4558;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    background-image: url("./components/stars-bg.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+body {
+    /* background-image: url("./components/stars-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1300px;
+}
+
+.split {
+    display: flex;
+}
+
+.split > * {
+    flex-basis: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*------------------------------
+    Guessing Game component css
+-------------------------------*/
+
+main {
+    height: 50vh;
+    background-color: #102936;
+    color: #fff;
+}
+
+main .game-banner {
+    height: 300px;
+    background-color: aqua;
+}
+
+.game-topic {
+    color: var(--trooper-green)
+}
+
+/*
+    New game
+
+    .game-space
+    -> .game-info
+    -> .game-question
+    -> .answer-section
+    -> .button
+*/
+
+.game-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.game-info {
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.game-question {
+    margin: 1rem 0 ;
+    padding: 1rem;
+}
+
+.answer-section input[type="radio"] {
+    margin-right: .5rem;
+}
+
+.answer-section span {
+    font-family: 'Bungee';
+    padding: .5rem 1rem;
+    background: #000;
+    color: #000;
+    letter-spacing: .2rem;
+    border-radius: 5px;
+}
+
+.style1 {
+    border: 1px solid var(--trooper-blue);
+    text-shadow: -1px 1px 0 var(--trooper-blue),
+                    1px 1px 0 var(--trooper-blue),
+                    1px -1px 0 var(--trooper-blue),
+                -1px -1px 0 var(--trooper-blue);
+}
+
+.style2 {
+    border: 1px solid var(--trooper-green);
+    text-shadow: -1px 1px 0 var(--trooper-green),
+                    1px 1px 0 var(--trooper-green),
+                    1px -1px 0 var(--trooper-green),
+                -1px -1px 0 var(--trooper-green);
+}
+
+.style3 {
+    border: 1px solid var(--trooper-red);
+    text-shadow: -1px 1px 0 var(--trooper-red),
+                    1px 1px 0 var(--trooper-red),
+                    1px -1px 0 var(--trooper-red),
+                -1px -1px 0 var(--trooper-red);
+}
+
+.style4 {
+    border: 1px solid var(--trooper-yellow);
+    text-shadow: -1px 1px 0 var(--trooper-yellow),
+                    1px 1px 0 var(--trooper-yellow),
+                    1px -1px 0 var(--trooper-yellow),
+                -1px -1px 0 var(--trooper-yellow);
+}
+
+.submit-btn {
+    background-color: #000;
+    border: 1px solid var(--sw-yellow);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: .25rem .5rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    font-weight: 400;
+    font-family: 'Bungee';
+    cursor: pointer;
+    text-shadow: -1px 1px 0 var(--sw-yellow),
+                    1px 1px 0 var(--sw-yellow),
+                    1px -1px 0 var(--sw-yellow),
+                -1px -1px 0 var(--sw-yellow);
+}
+
+.submit-btn:hover,
+.answer-section span:hover {
+    background-color: #313131;
+}
+
+/*
+    Nav
+*/
+
+nav {
+    background: var(--sw-black);
+    color: var(--sw-yellow);
+    padding: 1rem 0;
+    box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px #0000001A;
+    border-bottom: 2px solid var(--trooper-gray);
+    border-radius: 5px;
+}
+
+.logo-container {
+    color: var(--sw-yellow);
+    line-height: 95%;
+    text-transform: uppercase;
+}
+
+.logo-t1 {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    font-weight: 400;
+    font-family: 'Bungee';
+    cursor: pointer;
+    color: #000;
+    text-shadow: -1px 1px 0 var(--sw-yellow),
+                    1px 1px 0 var(--sw-yellow),
+                    1px -1px 0 var(--sw-yellow),
+                -1px -1px 0 var(--sw-yellow);
+}
+
+.logo-t2 {
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .0005rem;
+}
+
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav li {
+    padding-left: 1rem;
+}
+
+nav a:hover {
+    color: rgb(85, 84, 84);
+}
+
+nav a {
+    text-decoration: none;
+}
+
