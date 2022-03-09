@@ -3,6 +3,7 @@ import Nav from './components/Nav.js';
 import Star from "./components/stars-bg.jpg"
 import GameControl from "./components/GameControl"
 import TestGameTemplate from './components/TestGameTemplate';
+import TestControls from './components/TestControls';
 
 function App() {
   const bodyStyle = {
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Nav pages={navTabs} key={navKeys}/>
-      <TestGameTemplate />
+      <TestControls />
     </div>
   );
 }
